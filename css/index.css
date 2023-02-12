@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+    background-color: rgba(206, 223, 238, 0.993);
+
+  }
+  .hero{
+    text-align: center;
+    padding: 10px;
+    background-color: aliceblue;
+  }
+  img{
+  height: 400px;;
+  width: 50%;
+  box-shadow: 4px -2px 15px 5px blue;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px; 
+  }
+  
+  .flex-item-left {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
+  @media (max-width: 800px) {
+    img{
+      width: 80%;
+    }
+  }
